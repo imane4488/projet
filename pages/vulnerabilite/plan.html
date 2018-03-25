@@ -304,8 +304,98 @@
     <section class="content">
       
 
+<div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              
+             <div style="float: left;">
+              <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control pull-right" placeholder="chercher..">
 
-      <div class="row">
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>Produits</th>
+                  <th>Vulnerabilite</th>
+                  <th>Type</th>
+                  <th>plan d'action</th>
+                  <th>Description</th>
+                  <th>Responsable</th>
+                  <th>Date Limite</th>
+                  <th>Composants</th>
+                  <th>Responsable Description</th>
+                  <th>Etat d'avancement</th>
+                 
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Windows</td>
+                  <td>Port securite
+
+                  </td>
+                  <td>Mise A Jours</td>
+                  <td> 10.1.2</td>
+                  <td>faut mettre a jour le systeme a la version 10.1.2 anterieur</td>
+                  <td>Haloumi Mehdi</td>
+                  <td>21/3/2018<small class="label label-danger"><i class="fa fa-clock-o"></i> 8 Jours</small></td>
+                  <td>Composant-X</td>
+                  <td>lorem upsum ..........</td>
+                <td><span class="badge bg-green">90%</span></td>
+                  
+                  
+                </tr>
+                <tr>
+                  <td>Windows</td>
+                  <td>Port securite
+
+                  </td>
+                  <td>Mise A Jours</td>
+                  <td> 10.1.2</td>
+                  <td>faut mettre a jour le systeme a la version 10.1.2 anterieur</td>
+                  <td>Haloumi Mehdi</td>
+                  <td>21/3/2018<small class="label label-danger"><i class="fa fa-clock-o"></i> 8 Jours</small></td>
+                  <td>Composant-X</td>
+                  <td>lorem upsum ..........</td>
+                 <td><span class="badge bg-green">75%</span></td>
+                  
+                  
+                </tr>
+              <tr>
+                  <td>Windows</td>
+                  <td>Ingection Sql
+
+                  </td>
+                  <td>Configuration</td>
+                  <td> Modification des champs</td>
+                  <td>faut mettre a jour le systeme a la version 10.1.2 anterieur</td>
+                  <td>Haloumi Mehdi</td>
+                  <td>21/3/2018<small class="label label-danger"><i class="fa fa-clock-o"></i> 8 Jours</small></td>   
+                  <td>Composant-X</td>
+                  <td>lorem upsum ..........</td>
+                  <td><span class="badge bg-green">50%</span></td>                  
+                  
+                </tr>
+                
+                </tbody>
+                <tfoot>
+              
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+ 
         
           <!-- Main content -->
           <!-- Main content -->
@@ -546,12 +636,30 @@
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- ChartJS -->
 <script src="../../bower_components/chart.js/Chart.js"></script>
+<!-- DataTables -->
+<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
 </body>
 </html>
