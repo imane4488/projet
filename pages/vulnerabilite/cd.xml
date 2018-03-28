@@ -1,0 +1,157 @@
+<Vulnerabilite>
+	<vul>
+	<ACVID>4875</ACVID>
+
+	<title>Trend Micro Email Encryption Gateway</title>
+
+	<disclosure_date>21/02/2018</disclosure_date>
+
+	<discovery_date>21/02/2018</discovery_date>
+
+	<exploit_publish_date>Non spécifié</exploit_publish_date>
+
+	<solution_date>21/02/2018</solution_date>
+	<description>Multiples vulnérabilités dans Trend Micro Email Encryption Gateway : - CVE-2018-6220 : Une vulnérabilité d'exécution d'un code arbitraire. L'exploitation de cette faille pourrait permettre à un attaquant de corrompre la mémoire ce qui entraîne l'exécution d'un code arbitraire avec les mêmes droits que l'utilisateur actuel. - CVE-2018-6222 : Une vulnérabilité d'exécution d'un code arbitraire. L'erreur est due à des emplacements de journaux arbitraires. L'exploitation de cette faille pourrait permettre à un attaquant de corrompre la mémoire ce qui entraîne l'exécution d'un code arbitraire avec les mêmes droits que l'utilisateur actuel. - CVE-2018-6223 : Une vulnérabilité de contournement d'un composant de sécurité. L'erreur est due à un manque d'authentification pour l'enregistrement de l'appareil. L'exploitation de cette faille pourrait permettre à un attaquant de contourner les restrictions de sécurité. - CVE-2018-6225 : Une vulnérabilité de type entité externe XML (XXE). L'erreur survient au niveau d'un script de configuration. L'exploitation de cette faille pourrait permettre à un attaquant en injectant un fichier XML spécialement conçu avec des entrées malveillantes, de lire et d'écrire des fichiers. - CVE-2018-6226 : Une vulnérabilité de type script inter-sites (XSS cross-site scripting). L'erreur survient au niveau de deux scripts de configuration. L'exploitation de cette faille pourrait permettre à un attaquant d'exécuter un script dans le navigateur de l'utilisateur au sein de la relation de confiance entre le navigateur et le serveur. - CVE-2018-6227 : Une vulnérabilité de type script inter-sites (XSS cross-site scripting). L'erreur survient au niveau du script de politique. L'exploitation de cette faille pourrait permettre à un attaquant d'exécuter un script dans le navigateur de l'utilisateur au sein de la relation de confiance entre le navigateur et le serveur. - CVE-2018-6228 : Une vulnérabilité d'injection SQL. L'erreur survient au niveau du script de politique. L'exploitation de cette faille pourrait permettre à un attaquant de lire, de modifier ou de supprimer des entrées dans certaines tables de la base de données. - CVE-2018-6229 : Une vulnérabilité d'injection SQL. L'erreur survient au niveau du script de politique d'édition. L'exploitation de cette faille pourrait permettre à un attaquant de lire, de modifier ou de supprimer des entrées dans certaines tables de la base de données. - CVE-2018-6224 : Une vulnérabilité de type falsification de requêtes inter-sites (CSRF Cross-Site Request Forgery). L'erreur survient lors d'une mauvaise protection contre les attaques "CSRF". L'exploitation de cette faille pourrait permettre à un attaquant d'exécuter des actions avec les privilèges de l'utilisateur authentifié. - CVE-2018-6230 : Une vulnérabilité d'injection SQL. L'erreur survient au niveau d'un script de configuration de la recherche. L'exploitation de cette faille pourrait permettre à un attaquant de modifier ou de supprimer des entrées dans certaines tables de la base de données.</description>
+
+
+-<classifications>
+
+<type_classification>Emplacement</type_classification>
+
+<name_classification>Accès distant/réseau </name_classification>
+
+<type_classification>Exploit</type_classification>
+
+<name_classification>Exploit inconnu</name_classification>
+
+<type_classification>Impact</type_classification>
+
+<name_classification>Perte de confidentialité</name_classification>
+
+<name_classification>Perte d'intégrité</name_classification>
+
+<name_classification>Perte de la disponibilité</name_classification>
+
+<type_classification>Divulgation</type_classification>
+
+<name_classification>Vérifiée par l'éditeur</name_classification>
+
+<type_classification>Solution</type_classification>
+
+<name_classification>Mise à jour</name_classification>
+
+</classifications>
+
+
+-<Produits>
+
+<vendor>Trend micro</vendor>
+
+<produit>Email encryption gateway</produit>
+
+<version>5.5 Build 1111 et antérieures</version>
+
+</Produits>
+
+
+-<solutions>
+
+<name>Mise à jour</name>
+
+<value>Trend Micro Email Encryption Gateway Version 5.5 Build 1129</value>
+
+<url>http://files.trendmicro.com/products/TMEE/TMEEG/TMEEG2/TMEEG_VA-5_5_0_1129.tar.gz</url>
+
+</solutions>
+
+
+-<references>
+
+<name>Vendor Specific Advisory URL</name>
+
+<url>https://success.trendmicro.com/solution/1119349</url>
+
+<name>CVE ID</name>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6219</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6220</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6221</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6222</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6223</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6225</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6226</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6227</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6228</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6229</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6230</url>
+
+<url>http://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-6224</url>
+
+</references>
+
+
+-<CVSS>
+
+<cve_id>2018-6223</cve_id>
+
+<score>9.1</score>
+
+<cve_id>2018-6226</cve_id>
+
+<score>7.5</score>
+
+<cve_id>2018-6227</cve_id>
+
+<score>7.5</score>
+
+<cve_id>2018-6220</cve_id>
+
+<score>7.5</score>
+
+<cve_id>2018-6219</cve_id>
+
+<score>7.5</score>
+
+<cve_id>2018-6221</cve_id>
+
+<score>7.5</score>
+
+<cve_id>2018-6222</cve_id>
+
+<score>7.3</score>
+
+<cve_id>2018-6229</cve_id>
+
+<score>6.4</score>
+
+<cve_id>2018-6224</cve_id>
+
+<score>6.4</score>
+
+<cve_id>2018-6225</cve_id>
+
+<score>5.4</score>
+
+<cve_id>2018-6228</cve_id>
+
+<score>4.8</score>
+
+<cve_id>2018-6230</cve_id>
+
+<score>3.7</score>
+
+</CVSS>
+	</vul>
+
+	
+</Vulnerabilite>
